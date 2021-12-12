@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: 1s all;
+	border: none;
+	outline: none;
+	text-decoration: none;
+}
+
+img[alt="bodiesBackground"] {
+	z-index: -100;
+	position: absolute;
+	width: 100%;
+	height: 99.5vh;
+	top: 0;
+	left: 0;
+}
+
+.topic {
+	width: 100%;
+	height: 100vh;
+	display: none;
+	transform: scale(0);
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+}
+.topic.active {
+	display: flex;
+	transform: scale(1);
+}
+.topic h2 {
+	font-size: 1.5rem;
+	color: white;
+}
+.topic button {
+	font-size: 1rem;
+	width: 270px;
+	height: 50px;
+	cursor: pointer;
+	background-color: rgb(34, 34, 170);
+	color: white;
+}
+.topic .rules {
+	background-color: white;
+	color: rgb(34, 34, 170);
+}
+
+.game__settings {
+	width: 100%;
+	height: 100vh;
+	display: none;
+	transform: scale(0);
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.game__settings.active {
+	display: flex;
+	transform: scale(1);
+}
+.game__settings.topic.active {
+	display: flex;
+	transform: scale(1);
+}
+.game__settings h2 {
+	font-size: 1.5rem;
+	color: white;
+	text-align: center;
+}
+.game__settings div {
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 2rem 0;
+}
+
+.game__settings div p {
+	color: white;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.game__settings div i {
+	cursor: pointer;
+	color: white;
+	padding: 10px;
+	background-color: gray;
+	border-radius: 50%;
+	font-size: 1.5rem;
+}
+.game__settings > i {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	font-size: 2rem;
+	color: white;
+	cursor: pointer;
+}
+.game__settings .begin {
+	width: 200px;
+	height: 40px;
+	color: white;
+	background-color: rgb(34, 34, 170);
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.playing {
+	width: 100%;
+	height: 100vh;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0);
+}
+.playing.active {
+	display: flex;
+	transform: scale(1);
+}
+.playing .look {
+	width: 270px;
+	height: 60px;
+	font-size: 1.7rem;
+	color: white;
+	background-color: rgb(34, 34, 170);
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.word {
+	width: 100%;
+	height: 100vh;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	font-size: 2rem;
+	color: white;
+	flex-direction: column;
+}
+
+.word p {
+	font-size: 2rem;
+}
+.word button {
+	width: 270px;
+	height: 60px;
+	font-size: 1.7rem;
+	color: white;
+	background-color: rgb(34, 34, 170);
+	border-radius: 20px;
+	cursor: pointer;
+}
+.word.active {
+	display: flex;
+}
+.playing1{
+	width: 100%;
+	height: 100vh;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	font-size: 2rem;
+	color: white;
+	flex-direction: column;
+}
+.playing1.active{
+	display: flex;
+}
+.games {
+	width: 270px;
+	height: 60px;
+	font-size: 1.7rem;
+	color: white;
+	background-color: rgb(34, 34, 170);
+	border-radius: 20px;
+	cursor: pointer;
+}
